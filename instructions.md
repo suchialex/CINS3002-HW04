@@ -47,26 +47,22 @@ In the function body,
   - Now append it to the empty list you created above
   - Outside the for loop close the file
   - Return the list
+  - 💡If you are familiar with list comprehension, you may use that to create the list from file
 </details>
 
-## In main.py
+## In list_functions.py
 
 <details>
   <summary>
-    ✅ Call the function file_to_list()
+    ✅ Inside employee_operations(), call the function file_to_list()
   </summary>
 
-   - Comment out the call to employee_operations
-   - Make sure you import the module list_functions
+   - After the print("Employee Management") statement in employee_operations() function,
    - Call the function file_to_list()
    - Store the returned list in a variable
    - Print the list (you may use suchi_print(), after importing it)
    - Execute the code to see if the list is being printed
 </details>
-
-
-
-
 
 ## In list_functions.py
 
@@ -84,6 +80,7 @@ In the function body,
   - EXECUTE YOUR CODE by changing the name of the file from employees.txt to em.txt
   - You should still be able to print an empty list, if yes,
   - Change the file name back to employees.txt
+  - You may comment out the print statment inside employee_operations now
 </details>
 
 
@@ -123,8 +120,8 @@ In the function body
   - Call the lookup_employee() passing TWO arguments, the list obtained earlier and the employee id from the above step
   - Store the returned values in two variables
   - Check if the first variable is False, if yes, print employee not found
-  - Execute your code and enter employee ID 1004 and see if the correct values are being printed
-  - Execute your code again and enter employee ID 54, it should print employee not found
+  - Execute your code and enter employee ID that exists in your file and see if the correct values are being printed
+  - Execute your code again and enter employee ID that doesn't exist, it should print `Employee not found`
 </details>
 
 
