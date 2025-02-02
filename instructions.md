@@ -26,7 +26,7 @@
   <summary>
     ✅ Add a new file
   </summary>
-  Create a new file named list_functions.py
+  Create a new file named list_functions.py and copy the employee_operations() function from functions.py to it
 </details>
 
 ## In list_functions.py
@@ -50,7 +50,6 @@ In the function body,
   - 💡If you are familiar with list comprehension, you may use that to create the list from file
 </details>
 
-## In list_functions.py
 
 <details>
   <summary>
@@ -64,7 +63,6 @@ In the function body,
    - Execute the code to see if the list is being printed
 </details>
 
-## In list_functions.py
 
 <details>
   <summary>
@@ -109,17 +107,16 @@ In the function body
 
 </details>
 
-## In main.py
 
 <details>
   <summary>
-    ✅ Call the lookup_employee()
+    ✅ Modify the lookup_employee() function call
   </summary>
 
-  - After the file_to_list() function call, ask the user to provide the employee ID that needs to be looked up using input statement
-  - Call the lookup_employee() passing TWO arguments, the list obtained earlier and the employee id from the above step
-  - Store the returned values in two variables
-  - Check if the first variable is False, if yes, print employee not found
+  - Inside employee_operations() in the appropriate elif block,
+  - Modify the lookup_employee() call - we are now passing TWO arguments, the list obtained earlier and the employee id from the above step, in that order
+  - Store the returned values in TWO variables - choose names for these variables
+  - Check if the first variable is False, if yes, print `Employee Not Found`
   - Execute your code and enter employee ID that exists in your file and see if the correct values are being printed
   - Execute your code again and enter employee ID that doesn't exist, it should print `Employee not found`
 </details>
@@ -142,19 +139,16 @@ In the function body
   - Using a print statement, print the ID (employees[position]), name (employees[position+1], etc.) in a tabular format
 </details>
 
-## In main.py
 
 
 <details>
   <summary>
-    ✅ Call display_employees()
+    ✅ Modify display_employees() function call
   </summary>
   
-  - You may comment out the code related to lookup_employee() (🚩 NOT the list_to_file() function call)
-  - Call the display_employees() by passing the employees list (obtained from the file_to_list function) as an argument
+  - In the appropriate elif block, modify the display_employees() call - now we are passing one argument - the employees list (obtained from the file_to_list function)
 </details>
 
-## In list_functions.py
 
 <details>
   <summary>
