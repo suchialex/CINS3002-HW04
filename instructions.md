@@ -29,6 +29,13 @@
   Create a new file named list_functions.py and copy the employee_operations() function from functions.py to it
 </details>
 
+<details>
+  <summary>
+    ✅ Download a file
+  </summary>
+  Download [this file][https://github.com/suchialex/pretty-print/blob/main/suchi_pretty_print.py] to your project folder
+</details>
+
 ## In list_functions.py
 
 <details>
@@ -40,14 +47,17 @@
   - This function does not accept any parameters
 
 In the function body,
-  - First, create an empty list (this list will contain all the employees data)
-  - Open the file employees.txt in read mode and store it in a file pointer
-  - Using this file pointer, start a for loop with a loop variable of your choice (this variable will read each line of the file)
-  - Strip off the newline character from the loop variable
-  - Now append it to the empty list you created above
-  - Outside the for loop close the file
-  - Return the list
-  - 💡If you are familiar with list comprehension, you may use that to create the list from file
+  - First, 
+  - In try block, open the file employees.txt in read mode and store it in a file pointer
+  - In the except block print `File Not Found` and return an empty list []
+  - In the else block,
+    - Create an empty list (this list will contain all the employees data)
+    - Using the above file pointer, start a for loop with a loop variable of your choice (this variable will read each line of the file)
+      - Strip off the newline character from the loop variable
+      - Now append it to the empty list you created above
+    - Outside the for loop close the file
+    - Return the list
+    - 💡If you are familiar with list comprehension, you may use that to create the list from file
 </details>
 
 
@@ -59,7 +69,7 @@ In the function body,
    - After the print("Employee Management") statement in employee_operations() function,
    - Call the function file_to_list()
    - Store the returned list in a variable
-   - Print the list (you may use suchi_print(), after importing it)
+   - Print the list (you may use suchi_print(), after importing it using `from suchi_pretty_print import suchi_print`)
    - Execute the code to see if the list is being printed
 </details>
 
