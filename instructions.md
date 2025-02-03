@@ -35,7 +35,7 @@
   <summary>
     ✅ Download a file
   </summary>
-  Download [this file][https://github.com/suchialex/pretty-print/blob/main/suchi_pretty_print.py] to your project folder
+  Download this file https://github.com/suchialex/pretty-print/blob/main/suchi_pretty_print.py to your project folder
 </details>
 
 ## In list_functions.py
