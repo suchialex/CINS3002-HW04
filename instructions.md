@@ -26,7 +26,9 @@
   <summary>
     ✅ Add a new file
   </summary>
-  Create a new file named list_functions.py and copy the employee_operations() function from functions.py to it
+  - Create a new file named list_functions.py and to this file
+  - Copy all the functions from functions.py (we will modify these functions to perform list operations)
+  
 </details>
 
 <details>
@@ -49,7 +51,9 @@
 In the function body,
   - First, 
   - In try block, open the file employees.txt in read mode and store it in a file pointer
-  - In the except block print `File Not Found` and return an empty list []
+  - In the except block
+  -   Write a statement to print `File Not Found`
+  -   return an empty list
   - In the else block,
     - Create an empty list (this list will contain all the employees data)
     - Using the above file pointer, start a for loop with a loop variable of your choice (this variable will read each line of the file)
@@ -70,34 +74,17 @@ In the function body,
    - Call the function file_to_list()
    - Store the returned list in a variable
    - Print the list (you may use suchi_print(), after importing it using `from suchi_pretty_print import suchi_print`)
-   - Execute the code to see if the list is being printed
+   - Execute the code to see if your employees data is being printed correctly
+   - If everything is executing correctly, you may comment out the print statment now
 </details>
 
 
 <details>
   <summary>
-    ✅ Modify list_to_file
-  </summary>
-  🚩 IF the list is printed correctly, then only proceed
-
-  - Place the statement(s) that could raise an exception in the try block
-  - Write an except block,
-    - print <code>File not found</code>
-    - return an empty list <code>return []</code> <br> (we are making sure that even though the file doesn't exist, we are returning a list)
-  - Move the rest of the code you have written into the else suite
-  - EXECUTE YOUR CODE by changing the name of the file from employees.txt to em.txt
-  - You should still be able to print an empty list, if yes,
-  - Change the file name back to employees.txt
-  - You may comment out the print statment inside employee_operations now
-</details>
-
-
-<details>
-  <summary>
-    ✅ Define lookup_employee()
+    ✅ Modify lookup_employee()
   </summary>
 
-  This function takes two parameters 
+  This function NOW takes two parameters 
   - the employees list 
   - the employee_id we are trying to lookup 
 
@@ -106,15 +93,15 @@ In the function body,
   - index (the integer position in the list where the employee_id was found, we don't find the employee, we will return 0)
 
 In the function body
+  - Clear the existing code
   - Using an if statement and the in operator, check if the employee_id (passed as parameter) is present in the employees list (passed as parameter)
   - If yes,
     - Get the index of the employee id in the list
     - Using this index, print the Name, Department and Salary
     - return True and the index obtained above
   - If not
-    - print employee not found
+    - print `Employee Not Found`
     - return False and 0
-
 </details>
 
 
@@ -126,9 +113,7 @@ In the function body
   - Inside employee_operations() in the appropriate elif block,
   - Modify the lookup_employee() call - we are now passing TWO arguments, the list obtained earlier and the employee id from the above step, in that order
   - Store the returned values in TWO variables - choose names for these variables
-  - Check if the first variable is False, if yes, print `Employee Not Found`
-  - Execute your code and enter employee ID that exists in your file and see if the correct values are being printed
-  - Execute your code again and enter employee ID that doesn't exist, it should print `Employee not found`
+  - 📜Test your code by entering an employee ID that exists and an employee ID that doesn't exist
 </details>
 
 
