@@ -26,6 +26,7 @@
   <summary>
     ✅ Add a new file
   </summary>
+  
   - Create a new file named list_functions.py and to this file
   - Copy all the functions from functions.py (we will modify these functions to perform list operations)
   
