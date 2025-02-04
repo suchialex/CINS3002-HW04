@@ -170,7 +170,7 @@ In the function body
 
 <details>
   <summary>
-    ✅ Modify the update_employee_name call
+    ✅ Modify the update_employee_name() call
   </summary>
   In the appropriate elif block modify the update_employee_name - it now accepts one argument, employees list returned by file_to_list. Store the returned list in the same employees list variable (for simplicity)
 </details>
