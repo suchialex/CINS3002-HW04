@@ -231,5 +231,6 @@ In the function body
     ✅ Call the list_to_file() function
   </summary>
   In employee_operations() function, outside the while loop<br>
-  Call the function list_to_file passing the employee list as argument
+  Call the function list_to_file passing the employee list as argument<br>
+  This is the last line of code in employee_operations() function
 </details>
