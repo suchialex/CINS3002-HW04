@@ -113,6 +113,7 @@ In the function body
   - Inside employee_operations() in the appropriate elif block,
   - Modify the lookup_employee() call - we are now passing TWO arguments, the list obtained earlier and the employee id from the above step, in that order
   - Store the returned values in TWO variables - choose names for these variables
+  - You may delete the if block and the print `Employee Not Found` statement (we are doing this inside the lookup function)
   - 📜Test your code by entering an employee ID that exists and an employee ID that doesn't exist
 </details>
 
@@ -154,31 +155,30 @@ In the function body
   
 In the function body
 
+  - Clear the existing code (you may leave the print statement)
   - Ask the user to provide the employee ID whose name needs to be updated and store in a variable
   - call the lookup function using the employee list passed as the parameter and the above variable
   - store the returned values in two variables
   - check if the first variable is True, if yes
     - Ask the user to provide a new first name by calling the validate_first_name() function
-    - Ask the user to provide a new last name by calling the validate_first_name() function
+    - Ask the user to provide a new last name by calling the validate_last_name() function
     - 🚩 You may have to import the validations module
     - concatenate the first and last names with a space in between 
     - then modify the index+1 position in the employees list with the new full name
   - Outside the if block, return the employees list
 </details>
 
-## In main.py
-
 <details>
   <summary>
-    ✅ Call update_employee_name
+    ✅ Modify the update_employee_name call
   </summary>
-  After the display_employees, call the update_employee_name by passing the employees list returned by file_to_list as an argument. Store the returned list in the same employees list variable (for simplicity)
+  In the appropriate elif block modify the update_employee_name - it now accepts one argument, employees list returned by file_to_list. Store the returned list in the same employees list variable (for simplicity)
 </details>
 
 
 <details>
   <summary>
-    ✅ Define delete_employee()
+    ✅ Modify delete_employee() function
   </summary>
   The objective is to ask the employee to enter the employee ID to be deleted and delete the corresponding elements from the employees list
 
@@ -193,21 +193,18 @@ In the function body
   - If the first returned variable is True,
     - Write a statement to delete the element in the employees list at index position returned as the second value by the lookup function
     - Write the same statement three more times to delete the rest of the employee data elements from the list
-  - Outside the if block, return the employees
+  - Outside the if block, return the employees list
 </details>
 
-## In main.py
 
 <details>
   <summary>
-    ✅ Call the delete_employee() function
+    ✅ Modify the delete_employee() function call
   </summary>
-  You may comment out update_employee_name() call<br>
-  Call the delete_employee() by passing the employee list as the argument
+  In the apprpriate elif block, modify the delete_employee() function - it now takes one argument, the employees list. Store the returned list in the same variable (for simplicity)
 
 </details>
 
-## In list_functions.py
 
 <details>
   <summary>
@@ -227,28 +224,11 @@ In the function body
 
 </details>
 
-## In main.py
 
 <details>
   <summary>
     ✅ Call the list_to_file() function
   </summary>
-  You may comment the delete_employee() function<br>
+  In employee_operations() function, outside the while loop<br>
   Call the function list_to_file passing the employee list as argument
-</details>
-
-
-<details>
-  <summary>
-    ✅ Place your function calls in the appropiate if-elif blocks
-  </summary>
-
-  - file_to_list() will be the first function call
-  - print the menu of options
-  - ask the user what option he/she chooses using input statement
-  - place the function calls in the correct if-elif-else blocks as per your menu
-  - you may use pass statement in the blocks for which we haven't written functions for
-  - list_to_file will be the last function call in main body
-  - If you'd like to write the while loop, until user presses x or X, you are encouraged to do so. 🚩 BUT, make sure file_to_list and list_to_file function calls are OUTSIDE the while loop
-
 </details>
