@@ -121,7 +121,7 @@ In the function body
 
 <details>
   <summary>
-    ✅ Define display_employees()
+    ✅ Modify display_employees()
   </summary>
   The objective of this function is to display all employees in a tabular format
   
@@ -130,6 +130,7 @@ In the function body
 
   In the function body
 
+  - Clear the existing code
   - Get the employee id slice, employee ids start at the beginning of the list and appear at every fourth item in the list
   - Use a for loop to go over the id slice obtained above, name your loop variable whatever you want (this variable will have the employee id one at a time)
   - Inside the for loop find the index of the loop variable in the employees list and store in a variable named position
@@ -149,16 +150,15 @@ In the function body
 
 <details>
   <summary>
-    ✅ Define update_employee_name()
+    ✅ Modify update_employee_name()
   </summary>
   The objective is to get an employee ID and call the lookup_function to see if that employee exists in the list, if yes, we use the index returned by the lookup function and update the name which will be at index+1 position. This function takes the employee list as parameter and returns the modified employee list back<br>
 
   
 In the function body
 
-  - Clear the existing code (you may leave the print statement)
-  - Ask the user to provide the employee ID whose name needs to be updated and store in a variable
-  - call the lookup function using the employee list passed as the parameter and the above variable
+  - Clear the existing code after the print and input statements (first two lines of code)
+  - call the lookup function using the employee list passed as the parameter and the employee ID obtained from the input statement
   - store the returned values in two variables
   - check if the first variable is True, if yes
     - Ask the user to provide a new first name by calling the validate_first_name() function
@@ -176,6 +176,21 @@ In the function body
   In the appropriate elif block modify the update_employee_name - it now accepts one argument, employees list returned by file_to_list. Store the returned list in the same employees list variable (for simplicity)
 </details>
 
+<details>
+  <summary>
+    ✅ Modify update_employee_dept() and update_employee_salary()
+  </summary>
+  Use the code logic in the update_employee_name to implement these two functions. The difference will the index positions and the validate functions you'll be calling
+</details>
+
+<details>
+  <summary>
+    ✅ Modify the update_employee_dept() and update_employee_salary() calls
+  </summary>
+  
+  Use the same code logic and in the appropriate elif blocks modify the update_employee_name and update_employee_salary calls
+</details>
+
 
 <details>
   <summary>
@@ -188,8 +203,8 @@ In the function body
 
   In the function body<br>
 
-  - Ask the user for the employee ID to be deleted and store in a variable
-  - Call the lookup function using the employees list passed as the parameter and the employee ID above
+  - Clear the existing code after the print and input statements (first two lines of code)
+  - Call the lookup function using the employees list passed as the parameter and the employee ID obtained from the input statement
   - Store the returned values in two variables
   - If the first returned variable is True,
     - Write a statement to delete the element in the employees list at index position returned as the second value by the lookup function
