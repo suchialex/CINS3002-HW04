@@ -181,10 +181,10 @@ In the function body
 
 In the function body
   - Clear the existing code
-  - Using an if statement and the in operator, check if the employee_id (passed as parameter) is present in the employees list (passed as parameter)
+  - Using an if statement and the in operator, check if the employee_id (passed as parameter) is present in the employees list (passed as parameter) ⏩ Tutorial: 7-11
   - If yes,
-    - Get the index of the employee id in the list
-    - Using this index, print the Name, Department and Salary
+    - Get the index of the employee id in the list ⏩ Tutorial: 7-8
+    - Using this index, print the Name, Department and Salary (name will be at index+1, department will be at index+2 etc.)
     - return True and the index obtained above
   - If not
     - print `Employee Not Found`
@@ -214,16 +214,18 @@ In the function body
   
 In the function body
 
-  - Clear the existing code after the print and input statements (first two lines of code)
-  - call the lookup function using the employee list passed as the parameter and the employee ID obtained from the input statement
+  - Clear the existing code after the print, input statements and the lookup_employee function call (first three lines of code)
+  - Modify the lookup function to pass two arguments
+    - the employee list passed as the parameter and
+    - the employee ID obtained from the input statement
   - store the returned values in two variables
   - check if the first variable is True, if yes
     - Ask the user to provide a new first name by calling the validate_first_name() function
     - Ask the user to provide a new last name by calling the validate_last_name() function
-    - 🚩 You may have to import the validations module
     - concatenate the first and last names with a space in between 
-    - then modify the index+1 position in the employees list with the new full name
+    - then modify the index+1 position in the employees list with the new full name ⏩ Tutorial: 7-13a
   - Outside the if block, return the employees list
+  - 📜Execute your code to see if the employee name is being modified successfully
 </details>
 
 <details>
@@ -237,7 +239,7 @@ In the function body
   <summary>
     ✅ Modify update_employee_dept() and update_employee_salary()
   </summary>
-  Use the code logic in the update_employee_name to implement these two functions. The difference will the index positions and the validate functions you'll be calling
+  Use the code logic in the update_employee_name to implement these two functions. The difference will be the validate functions you'll be calling and the index positions you'll be modifying 
 </details>
 
 <details>
@@ -245,7 +247,8 @@ In the function body
     ✅ Modify the update_employee_dept() and update_employee_salary() calls
   </summary>
   
-  Use the same code logic and in the appropriate elif blocks modify the update_employee_name and update_employee_salary calls
+  - Use the same code logic and in the appropriate elif blocks modify the update_employee_dept and update_employee_salary calls
+  - Execute your code to see if the employee department and salary are being modified successfully
 </details>
 
 
@@ -264,7 +267,7 @@ In the function body
   - Call the lookup function using the employees list passed as the parameter and the employee ID obtained from the input statement
   - Store the returned values in two variables
   - If the first returned variable is True,
-    - Write a statement to delete the element in the employees list at index position returned as the second value by the lookup function
+    - Write a statement to delete the element in the employees list at index position returned by the lookup function ⏩ Tutorial: 7-10b
     - Write the same statement three more times to delete the rest of the employee data elements from the list
   - Outside the if block, return the employees list
 </details>
@@ -274,7 +277,7 @@ In the function body
   <summary>
     ✅ Modify the delete_employee() function call
   </summary>
-  In the apprpriate elif block, modify the delete_employee() function - it now takes one argument, the employees list. Store the returned list in the same variable (for simplicity)
+  In the appropriate elif block, modify the delete_employee() function - it now takes one argument, the employees list. Store the returned list in the same variable (for simplicity)
 
 </details>
 
@@ -302,7 +305,7 @@ In the function body
   <summary>
     ✅ Call the list_to_file() function
   </summary>
-  In employee_operations() function, outside the while loop<br>
+  In employee_operations() function, **outside** the while loop<br>
   Call the function list_to_file passing the employee list as argument<br>
   This is the last line of code in employee_operations() function
 </details>
