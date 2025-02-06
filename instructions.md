@@ -39,6 +39,16 @@
   Download this file https://github.com/suchialex/pretty-print/blob/main/suchi_pretty_print.py to your project folder
 </details>
 
+## In main.py
+
+<details>
+  <summary>
+    ✅ Change import statement
+  </summary>
+  Make sure you import the employee_operations function from the `list_functions` module
+</details>
+
+
 ## In list_functions.py
 
 <details>
@@ -56,7 +66,7 @@ In the function body,
   -   Write a statement to print `File Not Found`
   -   return an empty list
   - In the else block,
-    - Create an empty list (this list will contain all the employees data)
+    - Create an empty list (this list will contain all the employees data) ⏩ Tutorial: 7-2
     - Using the above file pointer, start a for loop with a loop variable of your choice (this variable will read each line of the file)
       - Strip off the newline character from the loop variable
       - Now append it to the empty list you created above
@@ -77,6 +87,82 @@ In the function body,
    - Print the list (you may use suchi_print(), after importing it using `from suchi_pretty_print import suchi_print`)
    - Execute the code to see if your employees data is being printed correctly
    - If everything is executing correctly, you may comment out the print statment now
+</details>
+
+<details>
+  <summary>
+    ✅ Modify display_employees()
+  </summary>
+  The objective of this function is to display all employees in a tabular format
+  
+  - This function takes one parameter - the employee list<br>
+  - This function returns nothing, so it is a void function<br>
+
+  In the function body
+
+  - Clear the existing code
+  - Slice the employee list to get a new list with only the employee IDs. 💡 Note: employee ids start at the beginning of the list and appear at every fourth item in the list ⏩ Tutorial: 7-24
+  - Use a for loop to go over the id slice obtained above, choose a name for the loop variable (this variable will have the employee id one at a time) ⏩ Tutorial: 7-14a
+  - Inside the for loop find the index of the loop variable in the employees list and store in a variable named `position` ⏩ Tutorial: 7-8
+  - Using a print statement, print the ID (employees[position]), name (employees[position+1], etc.) in a tabular format 🚩 Remember to convert salary to float
+</details>
+
+
+<details>
+  <summary>
+    ✅ Modify display_employees() function call
+  </summary>
+  
+  - In the appropriate elif block, modify the display_employees() call - now we are passing one argument - the employees list (obtained from the file_to_list function)
+  - 📜Execute your code and test if display_employees function is working correctly
+</details>
+
+## In validations.py
+
+<details>
+  <summary>
+    ✅ Create a function generate_next_id_lists()
+  </summary>
+  
+   - This function takes one parameter - employees list
+   - It returns a string (the calculated next employee ID)
+
+  In the function body
+   
+   - Check if the employees list is empty, (length  is zero) ⏩ Tutorial: 7-12
+     - return a default employee ID value of string 1001 (or any other numeric string of your choice)
+   - Outside the if block,
+     - Get the 4th element from the end of the employees list (this should give us the last employee ID in the list) ⏩ Tutorial: 7-6b
+     - Convert it to integer and add 1 to it
+     - Convert it to string and return it
+</details>
+
+## In list_functions.py
+
+<details>
+  <summary>
+    ✅ Modify add_employee()
+  </summary>
+
+  - This function NOW takes one parameter - the employees list
+  - It returns the employees list 
+
+In the function body
+  - Clear the code that opens file, writes to file and closes the file. You may leave the calls to the validations functions to name, department and salary as it they are
+  - Change the call to generate_next_id to `generate_next_is_lists()`, make sure to pass the employees list as an argument
+  - To the end of the employees list passed as the parameter, add the employee id, name, department, salary one at a time, in that order ⏩ Tutorial: 7-9a
+</details>
+
+
+<details>
+  <summary>
+    ✅ Modify the add_employee() function call
+  </summary>
+
+  - Inside employee_operations() in the appropriate elif block,
+  - Modify the add_employee() call - we are now passing the employees list
+  - Store the returned list in a variable (keep the same name as the argument for simplicity)
+  - 📜Execute your code and test if add_employee function is working correctly
 </details>
 
 
@@ -116,35 +202,6 @@ In the function body
   - Store the returned values in TWO variables - choose names for these variables
   - You may delete the if block and the print `Employee Not Found` statement (we are doing this inside the lookup function)
   - 📜Test your code by entering an employee ID that exists and an employee ID that doesn't exist
-</details>
-
-
-<details>
-  <summary>
-    ✅ Modify display_employees()
-  </summary>
-  The objective of this function is to display all employees in a tabular format
-  
-  - This function takes one parameter - the employee list<br>
-  - This function returns nothing, so it is a void function<br>
-
-  In the function body
-
-  - Clear the existing code
-  - Get the employee id slice, employee ids start at the beginning of the list and appear at every fourth item in the list
-  - Use a for loop to go over the id slice obtained above, name your loop variable whatever you want (this variable will have the employee id one at a time)
-  - Inside the for loop find the index of the loop variable in the employees list and store in a variable named position
-  - Using a print statement, print the ID (employees[position]), name (employees[position+1], etc.) in a tabular format
-</details>
-
-
-
-<details>
-  <summary>
-    ✅ Modify display_employees() function call
-  </summary>
-  
-  - In the appropriate elif block, modify the display_employees() call - now we are passing one argument - the employees list (obtained from the file_to_list function)
 </details>
 
 
