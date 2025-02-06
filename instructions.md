@@ -309,3 +309,11 @@ In the function body
   Call the function list_to_file passing the employee list as argument<br>
   This is the last line of code in employee_operations() function
 </details>
+
+
+<details>
+  <summary>
+    🚩 Hierarchy Chart
+  </summary>
+  This is not mentioned in the solution video, but you must draw your updated hierarchy chart and bring it to class on Monday. You may use any online tool or draw by hand.
+</details>
